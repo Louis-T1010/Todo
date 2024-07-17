@@ -1,0 +1,43 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: #fff7fc;
+}
+
+.container {
+    width: 300px;
+    padding: 16px;
+    background-color: rgb(236, 253, 253);
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: white;
+    background-color: white;
+    outline: none;
+}
+
+
+
+#button {
+    background-color: #b8e9ba;
+    border-radius: 5px;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}

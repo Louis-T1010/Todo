@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.example.todo.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello-servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.user.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.user.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.user.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.user.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateTodoItemServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.tasks.CreateTodoItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateTodoItemServlet</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetTasksServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.tasks.GetTasksServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetTasksServlet</servlet-name>
+        <url-pattern>/get-tasks</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChangePasswordServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.user.ChangePasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangePasswordServlet</servlet-name>
+        <url-pattern>/ch-password</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChangeEmailServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.user.ChangeEmailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeEmailServlet</servlet-name>
+        <url-pattern>/ch-email</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChangeUsernameServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.user.ChangeUsernameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeUsernameServlet</servlet-name>
+        <url-pattern>/ch-username</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TaskCompleteServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.tasks.TaskCompleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TaskCompleteServlet</servlet-name>
+        <url-pattern>/complete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UndoTaskServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.tasks.UndoTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UndoTaskServlet</servlet-name>
+        <url-pattern>/undo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DuplicateTaskServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.tasks.DuplicateTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DuplicateTaskServlet</servlet-name>
+        <url-pattern>/duplicate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FilterTasksServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.tasks.FilterTasksServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FilterTasksServlet</servlet-name>
+        <url-pattern>/filter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InitServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.userInitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitServlet</servlet-name>
+        <url-pattern>/init</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditTasksServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.tasks.EditTasksServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditTasksServlet</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RootServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.RootServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RootServlet</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.user.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteTaskServlet</servlet-name>
+        <servlet-class>com.example.todo.controller.tasks.DeleteTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteTaskServlet</servlet-name>
+        <url-pattern>/delete-task</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>signInPage</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signInPage</servlet-name>
+        <url-pattern>/signin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MainPage</servlet-name>
+        <jsp-file>/main.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainPage</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>settings</servlet-name>
+        <jsp-file>/settings.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>settings</servlet-name>
+        <url-pattern>/settings</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>signup</servlet-name>
+        <jsp-file>/signup.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signup</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,361 @@
+body{
+    font-family: "Dosis", sans-serif;
+    background-color:rgb(97, 97, 97);
+}
+
+.container{
+    display: flex;
+    gap: 10px
+}
+
+#refresh{
+    position: absolute;
+    right: 30%;
+    top: 3%;
+
+
+}
+
+#hello{
+    position: relative;
+    left: 3%;
+    top: 1%;
+}
+
+
+
+.today, .task {
+    box-shadow: 0 4px 199px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+}
+
+
+.today{
+    flex:1;
+    background-color: #fff4fc;
+    position: fixed;
+    left: 20%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+}
+
+#today-head{
+    position: absolute;
+    left: 2%;
+    top: 78px;
+}
+
+#today-seperator{
+    border-bottom: 2px solid #ccc;
+    margin-top: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#add-task{
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color:transparent;
+    position: relative;
+    top: 20%;
+    left: 40%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tasks{
+    position: relative;
+    left: 3%;
+    top: 60px;
+}
+
+.task-display{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    position: relative;
+    top: 5%;
+}
+
+.task-buttons{
+    margin-left: 5px;
+    height: 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    left: 15%;
+}
+
+#undo-task{
+    position: absolute;
+    left: 10%;
+    background-color: rgb(255, 223, 164);
+}
+
+#complete-task{
+    background-color: rgb(184, 253, 253);
+}
+
+#duplicate{
+    background-color: rgb(255, 255, 188);
+}
+
+#todays-tasks-form{
+    position: relative;
+    top: 3%;
+}
+
+#todays-tasks{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 20px;
+    gap: 40px;
+}
+
+#todays-tasks label{
+    margin-left: 2%;
+    vertical-align: middle;
+}
+
+
+
+
+
+#menu-seperator{
+    border-bottom: 2px solid #ccc;
+    margin-top: 12%;
+    margin-left: 7%;
+    margin-right: 8%;
+}
+
+#menu-items , #lists {
+    display: flex;
+    flex-direction: column;
+    gap: 7px; 
+}
+
+
+#todays-tasks li {
+    margin-left: -2em;
+}
+
+.menu{
+    flex: 1;
+    position: fixed;
+    background-color:rgb(188, 217, 219);
+    left: 0%;
+    top: 0%;
+    width: 20%;
+    height: 100%;
+}
+
+#list-section input[type="button"], .categories{
+    font-weight: bold;
+    background-color: rgb(255, 214, 247);
+    border: none;
+    position: relative;
+    left: 4%;
+    height: 30px;
+    width: 80%;
+    margin-top: 3%;
+}
+
+#menu-heading{
+    position: relative;
+    top: 3%;
+    left: 2%;
+}
+
+#menu-items{
+    position: relative;
+    list-style-type: none;
+    top: 7%;
+}
+
+#menu-items li {
+    margin-left: -2em;
+}
+
+
+
+#list-section{
+    position: relative;
+    margin-left: 0%;
+}
+
+#lists{
+    list-style-type: none;
+}
+
+#lists li{
+    margin-left: -40px;
+}
+
+#create-list{
+    border: none;
+    background-color:rgb(235, 235, 235);
+
+}
+
+
+#misc {
+    position: fixed;
+    top: 89%;
+    left: 2%; 
+}
+
+
+.task{
+    border-top-right-radius: 45px ;
+    border-bottom-right-radius: 45px;
+    position: fixed;
+    left: 60%;
+    top: -0.4%;
+    background-color: rgb(235, 235, 235);
+    width: 40%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+#task-head{
+    position: relative;
+    left: 1%;
+    top: 2.51px;
+}
+
+#task-seperator{
+    border-bottom: 2px solid #ccc;
+    margin-top: 6.8%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#task-items {
+    margin-left: -7%;
+    margin-top: 12.5%;
+}
+
+#task-items input{
+    margin-bottom: 4%;
+    position: relative;
+    left: 3%;
+    border-radius:4px;
+    background-color: hwb(0 100% 0% / 0.322);;
+}
+
+#task-items ::placeholder{
+    font-size: 15px;
+}
+
+.task h3, #ltags, #tags{
+    margin-left: 2%;
+}
+
+
+
+
+#task-items h2{
+    margin-right: 1px;
+}
+
+#save-delete{
+    position: relative;
+    top:25%;
+    left: 34%;
+}
+
+#save-delete input[type="button"]{
+    margin-left: 5%;
+    height: 40px;
+    width: 30%;
+    border-radius: 5px;
+    font-weight: bolder;
+    position: relative;
+    right: 20%;
+}
+
+#save-task{
+    background-color: #d7ffc0;
+}
+
+#delete-task{
+    background-color: #fc837b;
+}
+
+.list-dropdown{
+    position: relative;
+    left: 2%;
+}
+
+.list-dropdown select{
+    border-radius: 5px;
+    width: 23%;
+    height: 25px;
+}
+
+#edit-task-form{
+    background-color: aliceblue;
+    width: 30%;
+    position: fixed;
+    left: 70%;
+}
+
+#edit-task-name{
+    position: relative; 
+    left: 2%;
+    background-color: white;
+    border-width: 1px;
+    height: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#create-task-category {
+    position: relative;
+    left: 2%;
+    background-color: rgb(255, 238, 0);
+    background: transparent;
+    border-radius: 5px;
+    background-color: aliceblue;
+    
+}
+
+#create-task-category option{
+    border-radius: 5px;
+}
+
+
+
+
+#create-task-block{
+    background-color: rgb(0, 136, 255);
+    border: none;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+
+
+#create-task-block.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#new-category-input{
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#new-category-input.visibleNC {
+    opacity: 1;
+    transform: scale(1);
+}

@@ -1,0 +1,47 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: #fff7fc;
+}
+
+.container {
+    width: 300px;
+    padding: 16px;
+    background-color: rgb(236, 253, 253);
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: rgb(255, 255, 255);
+}
+
+
+#heading {
+    text-align: center;
+    font-size: 30px;
+}
+
+#signup-options {
+    text-align: center;
+    font-size: 20px; /* Adjusted for consistency */
+    font-family: 'Roboto', sans-serif; /* Updated to match body font */
+}
+
+#signup-options #login-button, #signup-button{
+    border-radius: 5px;
+
+    border: none;
+    padding: 10px 20px;
+    background: rgb(243, 255, 214);
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none; 
+    color: black; 
+}
