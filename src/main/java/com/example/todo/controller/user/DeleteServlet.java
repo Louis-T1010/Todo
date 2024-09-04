@@ -33,8 +33,8 @@ public class DeleteServlet extends HttpServlet {
                 response.sendRedirect("settings");
             } else {
                 Errors.fail(response, request);
-                response.getWriter().println("Error deleting user");
-                System.out.println("Error deleting user");
+                response.getWriter().println("Error deleting user.");
+                System.out.println("Error deleting user.");
                 System.out.println(sessionUsername);
                 System.out.println(UserManager.sessionEmail);
             }
