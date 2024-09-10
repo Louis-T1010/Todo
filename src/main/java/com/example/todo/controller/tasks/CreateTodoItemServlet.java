@@ -22,7 +22,7 @@ public class CreateTodoItemServlet extends HttpServlet {
         int userId = user.getUserId();
         String category = request.getParameter("create-task-category");
         System.out.println("category: "+category);
-        if(category == null || category.equals("+ New Category") || category.equals("new")){
+        if(category == null || category.equals("+ New Category")||category.equals("new")){
             category = "uncategorized";
         }
         try{
