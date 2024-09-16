@@ -13,7 +13,6 @@ public class Task {
     String dateCreated;
 
     static TaskManager taskManager = new TaskManager();
-
     public Task(String taskName, String category, int complete, int id, String dateCreated) {
         this.taskName = taskName;
         this.category = category;
